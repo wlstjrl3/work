@@ -1,0 +1,63 @@
+.container{
+    margin:0 auto;
+    max-width:1280px;
+    padding:20px;
+}
+.eduDT{
+    width:100%;
+    padding:10px;
+    border:1px solid #DDD;
+}
+
+.reqForm .reqTr{
+    width:100%;
+    float:left;
+}
+
+.reqForm .reqTh, .reqForm .reqTd{
+    height: 45px; /*float를 이용하여 띄울때 높이가 없으면 전부 위로 겹침*/
+}
+.reqForm .reqTh{
+    width:90px;
+    float:left;
+    position:relative;
+    text-align: center;
+}
+.reqForm .reqTh span{
+    width:100%;
+    position:absolute;
+    top:50%;
+    transform: translate(-50%, -50%) rotate(.03deg);
+}
+.reqForm .reqTd{
+    padding:5px 0;
+    width:calc(100% - 90px);
+    float:right;
+}
+.reqForm .reqTd > input{
+    width:100%;
+    border:1px solid #DDD;
+}
+.reqForm .reqTd > input::placeholder {
+    color:#CCC;
+}
+@media(min-width:480px){
+
+}
+@media(min-width:720px){
+    .reqForm .reqTr{
+        width:50%;
+    }
+    
+    [type="radio"] {
+        width: 18px;
+        height: 18px;
+    }
+    [type="radio"]:checked::after {
+        width: 10px;
+        height: 10px;
+    }
+    .lableBr{
+        height:20px;
+    }
+}

@@ -1,0 +1,15 @@
+.scheduleBox{
+    width:100%;
+    float:left;
+    margin:4px 0 0 0; 
+}
+/*반응형 사이즈 지정 위의 전체설정이 mobile이고 아래쪽으로 tablet 및 desktop*/
+@media(min-width:480px){
+
+}
+@media(min-width:720px){
+    .scheduleBox{
+        width:calc(50% - 4px);
+        margin:4px 4px 0 0; 
+    }
+}

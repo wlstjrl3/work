@@ -1,0 +1,23 @@
+.customoverlay  {
+    display:block;
+    text-decoration:none;
+    color:#000;
+    border-radius:6px;
+    background: #FFF;
+    border:1px solid #CCC;
+    width:240px;
+    height:40px;
+    padding:0 0 0 5px;
+    margin:-6px 0 0 -1px;
+}
+.customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;} /*카카오 기본형 박스 숨김*/
+.customoverlay:after {
+    content:'';
+    position:absolute;
+    margin-left:-12px;
+    left:50%;
+    bottom:-10px;
+    width:22px;
+    height:12px;
+    background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+}
