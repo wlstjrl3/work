@@ -203,7 +203,7 @@ class hr_tbl{
                     XLSX.utils.sheet_add_aoa(worksheet, [clTitle], { origin: "A1" });
                     */
                     /* create an XLSX file and try to save to Presidents.xlsx */
-                    XLSX.writeFile(workbook, "familyTable.xlsx", { compression: true });    
+                    XLSX.writeFile(workbook, yyyymmdd+window.location.pathname+".xlsx", { compression: true });    
                 } else {
                     console.error(xhr.status, xhr.statusText);
                 }
